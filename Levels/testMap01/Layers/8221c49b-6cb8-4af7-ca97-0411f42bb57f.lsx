@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="10"/>
+    <region id="MetaData">
+        <node id="root">
+            <attribute id="ID" type="guid" value="8221c49b-6cb8-4af7-ca97-0411f42bb57f"/>
+            <attribute id="LayerColor" type="int32" value="-16740097"/>
+            <attribute id="Name" type="LSString" value="Triggers"/>
+        </node>
+    </region>
+</save>
