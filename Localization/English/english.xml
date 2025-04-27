@@ -9,4 +9,10 @@
   <content contentuid="he9f42d72g7979g4d14gbae3gc472c53d4d7b" version="2">Player</content>
   <content contentuid="h77df571agbc3cg4c35g90c0g8a1275979d92" version="2">Dummy</content>
   <content contentuid="hfe7e2eb2g664dgfb1bga778gd027965f260d" version="1">Drow Warehouse Key</content>
+  <content contentuid="hfb2c1c43g6bb9g6885ga190g74db5e978fd8" version="1"> Halt! This door is locked by order of the Matron of House Baenre. Leave immediately... or I will make you.</content>
+  <content contentuid="hc79248e1ga4dbg23c9g64a5g5c449f4d2820" version="1">What's in there?</content>
+  <content contentuid="hb6a6bf72g82dbg6cc8gf7d4g67d17c1e8e33" version="1">Nothing for you, &lt;i&gt;iblith. &lt;/i&gt;Leave me alone.</content>
+  <content contentuid="hae5c05b0g6640gd6e6ga0e0gf84071f80082" version="1">&lt;i&gt;(Lie) &lt;/i&gt;I was sent to retrieve something for the matron. Allow me to pass.</content>
+  <content contentuid="h83cbc1eeg4300g3fb7ga0edg28dd4cbdbb77" version="1"> (Persuade) They care not for you, forgotten and rotting away in this cave. Why don't you let me in, we'll split whatever's in there, and we live like kings instead?</content>
+  <content contentuid="hb592ae02g2fb4g95b5g39d8gd3c5c2587cb6" version="1">(Intimidate) I notice you're all alone down here. How long do you think it would take them to find your body, if something... &lt;i&gt;unfortunate &lt;/i&gt;were to happen?</content>
 </contentList>
