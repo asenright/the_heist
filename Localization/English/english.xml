@@ -4,15 +4,24 @@
   <content contentuid="hc800a5a1gd6fcg1135g96a0gf4f694d31cf0" version="1">Xek'shil</content>
   <content contentuid="h383d2306ge2c6gd21bg393dgc0a8e76d17e8" version="3">Drow Guard</content>
   <content contentuid="h7b976098g0839g1675gf8d0g56b9c46247fd" version="1">Guard</content>
-  <content contentuid="heb9d248agdbd7g4879g9481g415e8897633e" version="13">Xek'shil</content>
+  <content contentuid="heb9d248agdbd7g4879g9481g415e8897633e" version="14">Xek'shil</content>
   <content contentuid="h0a4ccc88g193fg40acgafcbg7c50c789666c" version="4">Dummy</content>
   <content contentuid="he9f42d72g7979g4d14gbae3gc472c53d4d7b" version="2">Player</content>
   <content contentuid="h77df571agbc3cg4c35g90c0g8a1275979d92" version="2">Dummy</content>
   <content contentuid="hfe7e2eb2g664dgfb1bga778gd027965f260d" version="1">Drow Warehouse Key</content>
-  <content contentuid="hfb2c1c43g6bb9g6885ga190g74db5e978fd8" version="1"> Halt! This door is locked by order of the Matron of House Baenre. Leave immediately... or I will make you.</content>
-  <content contentuid="hc79248e1ga4dbg23c9g64a5g5c449f4d2820" version="1">What's in there?</content>
-  <content contentuid="hb6a6bf72g82dbg6cc8gf7d4g67d17c1e8e33" version="1">Nothing for you, &lt;i&gt;iblith. &lt;/i&gt;Leave me alone.</content>
-  <content contentuid="hae5c05b0g6640gd6e6ga0e0gf84071f80082" version="1">&lt;i&gt;(Lie) &lt;/i&gt;I was sent to retrieve something for the matron. Allow me to pass.</content>
-  <content contentuid="h83cbc1eeg4300g3fb7ga0edg28dd4cbdbb77" version="1"> (Persuade) They care not for you, forgotten and rotting away in this cave. Why don't you let me in, we'll split whatever's in there, and we live like kings instead?</content>
-  <content contentuid="hb592ae02g2fb4g95b5g39d8gd3c5c2587cb6" version="1">(Intimidate) I notice you're all alone down here. How long do you think it would take them to find your body, if something... &lt;i&gt;unfortunate &lt;/i&gt;were to happen?</content>
+  <content contentuid="hfb2c1c43g6bb9g6885ga190g74db5e978fd8" version="11"> Halt! This door is locked by order of the Matron of House Baenre. Leave immediately... or I will make you.</content>
+  <content contentuid="hc79248e1ga4dbg23c9g64a5g5c449f4d2820" version="11">What's in there?</content>
+  <content contentuid="hb6a6bf72g82dbg6cc8gf7d4g67d17c1e8e33" version="11">Nothing for you, &lt;i&gt;iblith. &lt;/i&gt;Leave me alone.</content>
+  <content contentuid="hae5c05b0g6640gd6e6ga0e0gf84071f80082" version="11">&lt;i&gt;(Lie) &lt;/i&gt;I was sent to retrieve something for the matron. Allow me to pass.</content>
+  <content contentuid="h83cbc1eeg4300g3fb7ga0edg28dd4cbdbb77" version="11"> (Persuade) They care not for you, forgotten and rotting away in this cave. Why don't we split whatever's in there, and live like kings instead?</content>
+  <content contentuid="hb592ae02g2fb4g95b5g39d8gd3c5c2587cb6" version="11">(Intimidate) I notice you're all alone down here. How long do you think it would take them to find your body, if something... &lt;i&gt;unfortunate &lt;/i&gt;were to happen?</content>
+  <content contentuid="hd94d5f9eg03a7g8ff2g5907geecbee395d02" version="9"> Very well. You may enter.</content>
+  <content contentuid="hcddf946cg6a91gec55ge688g4056005050a7" version="9">If you are an agent of Matron Baenre, then I am a hairy kobold!</content>
+  <content contentuid="hf36822aag591fg72abg243cg784abbc47f90" version="9">&lt;i&gt;He looks uneasily from side to side... &lt;br&gt;&lt;/i&gt;Very well. Do not forget me when you become wealthy.</content>
+  <content contentuid="h1e4f21ceg35dfga181gcc11g20e66ae14e54" version="9">Loyalty may mean nothing to you, but it is everything to a drow warrior! I'll kill you!</content>
+  <content contentuid="h8ce1f394g6274g2b23g8e30gbba34b6e8ebe" version="9">You know, I was about to go find a latrine. Oh dear, I have dropped the key!</content>
+  <content contentuid="h0b8eeaf5g491fg377eg7cfag005536dee163" version="7">You're in my way. Time to die. &lt;i&gt;(Attack)&lt;/i&gt;</content>
+  <content contentuid="h2463562dg2a33g3324gf87ag9ac2c69e48ab" version="1">Good day.</content>
+  <content contentuid="h03957922g874cgdaeeg961bg16c248cebb29" version="6">Wrong cave, sorry. &lt;i&gt;(Leave)&lt;/i&gt;</content>
+  <content contentuid="h1041d50dg9bcdg352cg8b1cg36f1073ac2e7" version="6">I told you to go already. If I weren't so damned bored I'd make you.</content>
 </contentList>
