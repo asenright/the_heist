@@ -1,0 +1,75 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_DrowWarehouseBtnFlags((ITEM)PUZ_GEN_Button_A_000_f11526f3-95d7-450a-b0bc-6e6de8781ca6, (FLAG)FLG_DrowWarehouse_Btn1_f896b140-4d5d-b365-475c-c6e7febd6593);
+DB_DrowWarehouseBtnFlags((ITEM)PUZ_GEN_Button_A_001_7532a784-a236-4d0d-9615-fef012ff107c, (FLAG)FLG_DrowWarehouse_Btn2_6c6e7b2e-1873-f339-af7e-fbf71e414c33);
+DB_DrowWarehouseBtnFlags((ITEM)PUZ_GEN_Button_A_002_1957b2fd-9f6d-4127-8a18-f54057e9d820, (FLAG)FLG_DrowWarehouse_Btn3_4054697d-99ba-bc98-1283-7bd1871fcac6);
+KBSECTION
+//REGION Drow Warehouse Buttons
+
+IF
+UseFinished(_Player,_btn, 1)
+AND
+DB_DrowWarehouseBtnFlags(_btn, _flg)
+//AND 
+//NOT GetFlag(_flg, _btn)
+THEN
+SetFlag(_flg, _btn);
+ShowNotification(_Player, "A button clicks into place...");
+SetDisableUse(_btn, 1);
+
+IF
+FlagSet((FLAG)FLG_DrowWarehouse_Btn1_f896b140-4d5d-b365-475c-c6e7febd6593, _, _)
+AND
+GetFlag((FLAG)FLG_DrowWarehouse_Btn2_6c6e7b2e-1873-f339-af7e-fbf71e414c33,(FLAG)FLG_DrowWarehouse_Btn2_6c6e7b2e-1873-f339-af7e-fbf71e414c33, _)
+AND
+GetFlag((FLAG)FLG_DrowWarehouse_Btn3_4054697d-99ba-bc98-1283-7bd1871fcac6,(FLAG)FLG_DrowWarehouse_Btn3_4054697d-99ba-bc98-1283-7bd1871fcac6, _)
+AND
+DB_Players(_player)
+THEN
+ShowNotification(_player, "It sounds like something happened...");
+Unlock((ITEM)DOOR_GEN_Hatch_Cellar_Door_A_000_953e2355-1ebf-45f5-b1f6-2f1bcc0d128f, _player);
+
+
+/*
+IF
+UseFinished(_Player,(ITEM)PUZ_GEN_Button_A_000_f11526f3-95d7-450a-b0bc-6e6de8781ca6, 1)
+AND
+NOT GetFlag((FLAG)FLG_DrowWarehouse_Btn1_f896b140-4d5d-b365-475c-c6e7febd6593, (ITEM)PUZ_GEN_Button_A_000_f11526f3-95d7-450a-b0bc-6e6de8781ca6)
+THEN
+SetFlag((FLAG)FLG_DrowWarehouse_Btn1_f896b140-4d5d-b365-475c-c6e7febd6593, (ITEM)PUZ_GEN_Button_A_000_f11526f3-95d7-450a-b0bc-6e6de8781ca6);
+ShowNotification(_Player, "Button 1 clicks into place.");
+
+IF
+UseFinished(_Player,(ITEM)PUZ_GEN_Button_A_001_7532a784-a236-4d0d-9615-fef012ff107c, 1)
+AND
+NOT GetFlag((FLAG)FLG_DrowWarehouse_Btn2_6c6e7b2e-1873-f339-af7e-fbf71e414c33)
+THEN
+SetFlag((FLAG)FLG_DrowWarehouse_Btn2_6c6e7b2e-1873-f339-af7e-fbf71e414c33);
+ShowNotification(_Player, "Button 2 clicks into place.");
+
+IF
+UseFinished(_Player,(ITEM)PUZ_GEN_Button_A_002_1957b2fd-9f6d-4127-8a18-f54057e9d820, 1)
+AND
+NOT GetFlag((FLAG)FLG_DrowWarehouse_Btn3_4054697d-99ba-bc98-1283-7bd1871fcac6)
+THEN
+SetFlag((FLAG)FLG_DrowWarehouse_Btn3_4054697d-99ba-bc98-1283-7bd1871fcac6);
+ShowNotification(_Player, "Button 3 clicks into place.");
+
+IF
+FlagSet((FLAG)FLG_DrowWarehouse_Btn1_f896b140-4d5d-b365-475c-c6e7febd6593, _, _)
+AND
+GetFlag((FLAG)FLG_DrowWarehouse_Btn2_6c6e7b2e-1873-f339-af7e-fbf71e414c33, _, _)
+AND
+GetFlag((FLAG)FLG_DrowWarehouse_Btn3_4054697d-99ba-bc98-1283-7bd1871fcac6, _, _)
+AND
+DB_Players(_player)
+THEN
+ShowNotification(_player, "It sounds like something happened...");
+Unlock((ITEM)DOOR_GEN_Hatch_Cellar_Door_A_000_953e2355-1ebf-45f5-b1f6-2f1bcc0d128f, _player);
+*/
+// END REGION 
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "__Start"

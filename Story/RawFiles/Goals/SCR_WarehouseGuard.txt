@@ -1,0 +1,27 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_WarehouseGuards((CHARACTER)PTM_Drow_Guard_001_2c18fe15-9db3-47c0-95af-bd3fd7d338a8);
+KBSECTION
+IF
+FlagSet((FLAG)FLG_DrowWarehouseGuardFight_9b190cb3-46dc-f8e3-215f-ecb21312e39f, _speaker, _dialog)
+AND
+DB_WarehouseGuards(_guard)
+THEN
+SetFaction(_guard, (FACTION)Evil_4be9261a-e481-8d9d-3528-f36956a19b17);
+
+IF
+FlagSet((FLAG)FLG_DrowWarehouseGiveKey_ccfd8860-5280-db14-fae0-b6b5670de272, _speaker, _dialog)
+AND
+DB_WarehouseGuards(_guard)
+AND
+DB_Players(_player)
+AND 
+GetItemByTemplateInInventory((ITEMROOT)PTM_DROW_WAREHOUSE_KEY_d8b03c74-fb3e-404c-8239-6f636a507d79, _guard, _key)
+THEN
+MoveItemTo(_guard, _key, _player, 1, "Received  Key");
+ShowNotification(_player, "Received Key");
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "__Start"
