@@ -1,0 +1,11 @@
+game.configs.HiddenButton = Config{
+    root=StateRef{game.roots.DefaultTrap,
+        logic = StateRef{game.states.NonTrappedUsable,
+            DC = [[HiddenPerception_Trivial_7d16b9fd-d3c3-4693-9d50-ae44b962b4c4]],
+            Key = [[]],
+            MinDistance = 10,
+            OneShot = true,
+            StartEnabled = true,
+        },
+    }
+}

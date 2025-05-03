@@ -19,17 +19,28 @@ ShowNotification(_Player, "A button clicks into place...");
 SetDisableUse(_btn, 1);
 
 IF
-FlagSet((FLAG)FLG_DrowWarehouse_Btn1_f896b140-4d5d-b365-475c-c6e7febd6593, _, _)
+//FlagSet((FLAG)FLG_DrowWarehouse_Btn1_f896b140-4d5d-b365-475c-c6e7febd6593, _, _)
+GetFlag((FLAG)FLG_DrowWarehouse_Btn1_f896b140-4d5d-b365-475c-c6e7febd6593, (ITEM)PUZ_GEN_Button_A_000_f11526f3-95d7-450a-b0bc-6e6de8781ca6, _)
 AND
-GetFlag((FLAG)FLG_DrowWarehouse_Btn2_6c6e7b2e-1873-f339-af7e-fbf71e414c33,(FLAG)FLG_DrowWarehouse_Btn2_6c6e7b2e-1873-f339-af7e-fbf71e414c33, _)
+GetFlag((FLAG)FLG_DrowWarehouse_Btn2_6c6e7b2e-1873-f339-af7e-fbf71e414c33,(ITEM)PUZ_GEN_Button_A_001_7532a784-a236-4d0d-9615-fef012ff107c, _)
 AND
-GetFlag((FLAG)FLG_DrowWarehouse_Btn3_4054697d-99ba-bc98-1283-7bd1871fcac6,(FLAG)FLG_DrowWarehouse_Btn3_4054697d-99ba-bc98-1283-7bd1871fcac6, _)
+GetFlag((FLAG)FLG_DrowWarehouse_Btn3_4054697d-99ba-bc98-1283-7bd1871fcac6,(ITEM)PUZ_GEN_Button_A_002_1957b2fd-9f6d-4127-8a18-f54057e9d820, _)
 AND
 DB_Players(_player)
 THEN
 ShowNotification(_player, "It sounds like something happened...");
 Unlock((ITEM)DOOR_GEN_Hatch_Cellar_Door_A_000_953e2355-1ebf-45f5-b1f6-2f1bcc0d128f, _player);
+//RequestPing(_,_,_,(ITEM)DOOR_GEN_Hatch_Cellar_Door_A_000_953e2355-1ebf-45f5-b1f6-2f1bcc0d128f,_player);
 
+IF 
+UseFinished(_player, (ITEM)DOOR_GEN_Hatch_Cellar_Door_A_000_953e2355-1ebf-45f5-b1f6-2f1bcc0d128f, 1)
+THEN
+TeleportTo(_player, (ITEM)TOOL_Ladder_Wood_10n5H_A_000_e0cb6524-dc01-4c8b-8906-e82e461cbf24);
+
+IF 
+UseFinished(_player, (ITEM)TOOL_Ladder_Wood_10n5H_A_000_e0cb6524-dc01-4c8b-8906-e82e461cbf24, 1)
+THEN
+TeleportTo(_player, (ITEM)DOOR_GEN_Hatch_Cellar_Door_A_000_953e2355-1ebf-45f5-b1f6-2f1bcc0d128f);
 
 /*
 IF

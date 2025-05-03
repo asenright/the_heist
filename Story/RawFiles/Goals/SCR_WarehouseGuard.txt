@@ -19,7 +19,8 @@ DB_Players(_player)
 AND 
 GetItemByTemplateInInventory((ITEMROOT)PTM_DROW_WAREHOUSE_KEY_d8b03c74-fb3e-404c-8239-6f636a507d79, _guard, _key)
 THEN
-MoveItemTo(_guard, _key, _player, 1, "Received  Key");
+//MoveItemTo(_guard, _key, _player, 1, "Received  Key");
+ToInventory(_key, _player, 1, 1, 1);
 ShowNotification(_player, "Received Key");
 EXITSECTION
 
