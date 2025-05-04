@@ -35,7 +35,7 @@ Unlock((ITEM)DOOR_GEN_Hatch_Cellar_Door_A_000_953e2355-1ebf-45f5-b1f6-2f1bcc0d12
 IF 
 UseFinished(_player, (ITEM)DOOR_GEN_Hatch_Cellar_Door_A_000_953e2355-1ebf-45f5-b1f6-2f1bcc0d128f, 1)
 THEN
-TeleportTo(_player, (ITEM)TOOL_Ladder_Wood_10n5H_A_000_e0cb6524-dc01-4c8b-8906-e82e461cbf24);
+TeleportTo(_player, (TRIGGER)BoxTrigger_000_c49aa288-7340-4e4d-a46a-c708ceb6ffbe);
 
 IF 
 UseFinished(_player, (ITEM)TOOL_Ladder_Wood_10n5H_A_000_e0cb6524-dc01-4c8b-8906-e82e461cbf24, 1)
